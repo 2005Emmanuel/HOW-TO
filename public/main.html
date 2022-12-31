@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="output_style.css">
+    <title>Document</title>
+</head>
+<body class="bg-black font-[poppins]">
+  <span class="absolute text-white text-3xl top-5 left-4 cursor-pointer" onclick="Open()">
+    <i class="fa-solid fa-bars-staggered px-2"></i>
+  </span>
+
+  <div class="sidebar fixed top-0 bottom-0 lg:left-0 left-[-300px] p-2 w-[300px] overflow-y-auto text-center bg-gray-900">
+  <div class="text-gray-100 text-xl">
+    <div class="p-2.5 mt-1 flex items-center">
+      <p class="font-bold text-gray-200 text-[15px] ml-3 cursor-pointer">How-To Questions & Answers</p>
+      <i class="fa-solid fa-xmark cursor-pointer lg:hidden ml-36" onclick="Open()"></i>
+    </div>
+    <hr class="my-2 text-gray-600">
+  </div>
+  <a href="index.html"><div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer bg-gray-700
+  hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+  </svg>
+  <p>Back</p></a>
+  
+  </div>
+ <a href="htmlQuestionsPage.html"><div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer  bg-gray-700
+  hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">
+    <p class="text-white">HTML Questions?</p>
+  </div></a> 
+  <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer bg-gray-700
+  hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300"">
+    <p class="text-white">CSS Questions?</p>
+  </div>
+  <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer bg-gray-700
+  hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300"">
+    <p class="text-white">JAVASCRIPT Questions?</p>
+  </div>
+  <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer bg-gray-700
+  hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300"" id="submenu">
+    <p class="text-white">my name is ohn</p>
+  </div>
+ 
+</div>
+ 
+<script type="text/javascript">
+function Open(){
+  document.querySelector('.sidebar').classList
+  .toggle('left-[-300px]');
+}
+</script>
+
+<div class="container px-4 text-center mt-14 ">
+  <h1 class="text-black text-center font-bold text-4xl ">How-to</h1>
+  <p>Here is How-To Questions and Answers page</p>
+</div>
+
+</body>
+</html>
